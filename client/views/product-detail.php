@@ -264,9 +264,6 @@
                         src="./../upload/<?=$item["sp_image"]?>" alt=""></a>
                 <div class="product-item_percent">
                     <?=ceil(($item["sp_price"] - trim($item["sp_sale"])) * 100/$item["sp_price"])?>%</div>
-                <a href="index.php?url=san-pham-chi-tiet&id=<?= $item["sp_id"] ?>" class="product-item_icon">
-                    <i class="fa-solid fa-magnifying-glass-plus"></i>
-                </a>
             </div>
             <div class="product-item_price-wraper">
                 <div class="product-price-main">

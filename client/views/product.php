@@ -91,6 +91,11 @@
                 </div>
             </div>
         </div>
+        <style>
+        .product-item{
+            height: 420px;
+        }
+    </style>
         <div class="product-list_box">
             <?php foreach ($products as $item) { ?>
             <div class="product-item">
