@@ -85,7 +85,7 @@ function commentProduct($data){
 
 function getCommentProduct($id){
     $conn = connect();
-    $stmt = $conn->prepare("SELECT  * FROM `comment` INNER JOIN `user` ON comment.kh_id =  user.kh_id WHERE comment.sp_id = $id  ORDER BY comment.cmtt_id DESC");
+    $stmt = $conn->prepare("SELECT  * FROM `comment` INNER JOIN `user` ON comment.kh_id =  user.kh_id WHERE comment.sp_id = ".(int)$id."");
     $stmt->execute();
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $result = $stmt->fetchAll();
