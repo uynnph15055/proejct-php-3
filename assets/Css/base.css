@@ -18,7 +18,7 @@ a{
 }
 
 :root {
-    --color-primary: rgb(54, 54, 54);
+    --color-primary: #FF577F;
     --color-sub: #21E1E1;
     --color-black: #000;
     --color-white: #ffff;
@@ -423,3 +423,75 @@ a{
 .bg-twiter{
     background-color: #3AB0FF;
 }
+
+.product-list_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px ;
+ }
+ 
+ .product-item {
+    background-color: #ffff;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgb(240, 228, 228);
+    height: 360px;
+ }
+ 
+ .product-item:hover{
+    box-shadow: 0px 0px 10px var(--color-primary);
+ }
+ 
+ .product-item_name a:hover  {
+    color: var(--color-primary);
+ }
+ 
+ .product-item_name a{
+    margin: 4px 0px;
+    text-decoration: none;
+    color: var(--color-text);
+ }
+ 
+ .product-item_price-wraper{
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+ }
+ 
+ .product-item_img-box{
+    position: relative;
+ }
+ 
+ 
+ .product-item_price-wraper .product-price-main{
+    color: #b6030c;
+    font-weight: bold;
+    font-size: 1.1rem;
+ }
+ 
+ .product-item_price-wraper .product-price_sale{
+    margin-left: 15px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    text-decoration: line-through;
+    color: #444;
+ }
+ 
+ .product-item_percent{
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    background-color: #b6030c;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 600;
+    color: var(--color-white);
+    top: 0;
+    right: 0;
+ }
+ 
+ .product-item_phan{
+    background-color: yellow;
+    color: #000;
+ }

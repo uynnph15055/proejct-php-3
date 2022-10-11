@@ -1,20 +1,30 @@
 <?php  if(isset($_SESSION['success'])){ ?>
 <script>
-         alert('Thanh toán thành công !!!');
-         setTimeout(() => {
-            <?php unset($_SESSION['success']); ?>
-         }, 2000);
+alert('Thanh toán thành công !!!');
+setTimeout(() => {
+    <?php unset($_SESSION['success']); ?>
+}, 2000);
 </script>
 <?php 
 
  } ?>
 <style>
-    footer{
-        border-top: 1px solid #ccc;
-        padding-top: 20px
-    }
+footer {
+    border-top: 1px solid #ccc;
+    padding-top: 20px
+}
 </style>
 <footer class="footer">
+    <header class="header-footer">
+        <h3 class="commom-title text-center">
+            HÃY LIÊN HỆ VỚI CHÚNG TÔI!
+        </h3>
+        <p class="text-center color-text">Luôn sẵn sáng hỗ trợ và tư vấn cho bạn để có sản phẩm tốt nhất.</p>
+        <div class="header-footer-form-box text-center">
+            <input placeholder="Tìm kiếm sản phẩm" class="header-footer-form-input" type="text">
+            <button class="header-footer-form-btn">Gửi</button>
+        </div>
+    </header>
     <div class="header-footer_main padding-container">
         <div class="header-footer_description">
             <h4 class="title-header color-primary">Giới thiệu</h4>
@@ -43,30 +53,13 @@
         </div>
         <div class="header-description color-primary">
             <h4 class="title-header">Fanpage</h4>
-            <div class="fb-page"
-                data-href="https://www.facebook.com/Hoa-qu&#x1ea3;-T&#x1ea5;n-T&#xe0;i-107752811511572/"
-                data-tabs="timeline" data-width="250" data-height="150" data-small-header="false"
-                data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
-                <blockquote cite="https://www.facebook.com/Hoa-qu&#x1ea3;-T&#x1ea5;n-T&#xe0;i-107752811511572/"
-                    class="fb-xfbml-parse-ignore"><a
-                        href="https://www.facebook.com/Hoa-qu&#x1ea3;-T&#x1ea5;n-T&#xe0;i-107752811511572/">Hoa
-                        quả Tấn Tài</a></blockquote>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8638558814037!2d105.74459841440749!3d21.038132792835356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1665453619931!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <div class="footer-end">
         <p class="color-text text-center">Copyright © 2022 Urban Home. Powered by Haravan</p>
     </div>
 </footer>
-
-<div class="list-contact-icon-box">
-    <ul class="list-contact-icon">
-        <li class="bg-phone"><i class="fa-solid fa-phone"></i></li>
-        <li class="bg-facebook"><i class="fa-brands fa-facebook-f"></i></li>
-        <li class="bg-youtobe"><i class="fa-brands fa-youtube"></i></li>
-        <li class="bg-twiter"><i class="fa-brands fa-twitter"></i></li>
-    </ul>
-</div>
 </div>
 <div id="backTop">
     <i class="fa-solid fa-caret-up"></i>
@@ -77,9 +70,6 @@
 <script src="./../assets/js/back-top.js"></script>
 <script src="./../assets/js/list-cart.js"></script>
 <script>
-
-    
-
 function openCart() {
 
     document.getElementById("mySidenav").style.width = "350px";

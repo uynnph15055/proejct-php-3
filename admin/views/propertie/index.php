@@ -46,7 +46,7 @@
                     <br>
                     <input name="ma_color" type="color" placeholder="Mã màu">
                 </div>
-                <button class="btn btn-success">Thêm thuộc tính</button>
+                <button class="bg-main">Thêm thuộc tính</button>
             </form>
             <?php } ?>
 

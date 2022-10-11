@@ -25,19 +25,19 @@
     <div class="container">
         <header class="header">
             <div class="header-top">
-                <p>Chuyên quần áo nam chính hãng</p>
+                <p>Chuyên thiết bị điện máy cao cấp</p>
             </div>
             <div class="header-main padding-container">
                 <div class="header-main_log">
-                    <span>AVA SPORT <i class="fa-solid fa-shoe-prints"></i></span>
+                    <span><i class="fa-solid fa-laptop-medical"></i> PHỤ KIỆN </span>
                 </div>
                 <form action="?url=tim-kiem-san-pham" method="POST" class="header-search_form-box">
                     <input class="header-search_form-input" name="key_word" type="text" placeholder="Tìm kiếm sản phẩm">
                     <button class="header-search_btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="header-phone header-main_sub">
-                    <p><i class="fa-solid icon fa-square-phone"></i></p>
-                    <div class="">
+                    <p><img width="40px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaZ5IqGOGPSaX2GjKs_0gs83Im_JcDIV6cgg&usqp=CAU" alt=""></p>
+                    <div class="" style="margin-left:10px">
                         <span>Hotline:</span>
                         <br>
                         <p>1900.636.099
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <?php } ?>
-                <div class="header-cart header-main_sub" onclick="openCart()">
+                <a class="header-cart header-main_sub" href="index.php?url=gio-hang">
                     <div class="header-icon-cart">
                         <p><i class="fa-solid icon fa-cart-shopping"></i></p>
                         <span><?= isset($_SESSION["cart"]) ?  count($_SESSION["cart"]) : 0;?></span>
@@ -77,35 +77,9 @@
                         <p>Giỏ hàng
                         </p>
                     </div>
-                </div>
+                </a>
 
             </div>
-            <?php if(isset($_SESSION["cart"])){ ?>
-            <div id="mySidenav" class="sidenav cart-list-info" style="z-index: 10">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="" style="padding: 0px 20px ;border-top:1px solid #ccc;">
-                    <h4 style="margin-top: 10px;">Tổng số : <?php echo count($_SESSION["cart"]) ?></h4>
-                    <?php if(isset($_SESSION["cart"])){ $count=0; ?>
-                    <?php  foreach ($_SESSION["cart"] as $key => $value) { 
-                        $count+=$value['price'] * $value['number'] ?>
-                    <div class="cart-list-item">
-                        <img class="cart-list-item-img "
-                            src="./../upload/<?=$value["img"]?>"
-                            alt="">
-                        <div class="" style="margin-left: 10px">
-                            <p class="cart-list-item-name"><?=$value["name"]?></p>
-                            <p class="cart-list-item-price"> <?=number_format($value['price'],0,",",".")?>đ <span>(<?=$value["number"]?>)</span></p>
-                        </div>
-                        <a href="index.php?url=xoa-gio-hang&id=<?=$value['id']?>" class="btn-cart-delete" style="padding: 0px 10px"><i class="fa-solid fa-trash-can"></i></a>
-                    </div>
-                    <?php }?>
-
-                    <?php } ?>
-                    <h3  style="margin-top: 30px">Tổng tiền <span style="color: #8E0007"><?=number_format($count,0,",",".")?>đ</span></h3>
-                    <button class="cart-list-view"><a style="color: #000" href="index.php?url=gio-hang">Xem giỏ hàng</a> </button>
-                </div>
-            </div>
-            <?php } ?>
             <div class="header-menu padding-container">
                 <ul class="header-menu_list">
                     <li class="header-menu-item"><a href="index.php" class="header-menu-item-link">Trang chủ </a></li>

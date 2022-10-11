@@ -67,7 +67,7 @@
                     <label for="floatingTextarea2">Giới thiệu</label>
                 </div>
             </div>
-            <button class="btn float-end mt-2 btn-success">Thêm sản phẩm</button>
+            <button class="float-end mt-2 bg-main">Thêm sản phẩm</button>
         </div>
 
     </form>

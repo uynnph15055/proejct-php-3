@@ -16,7 +16,7 @@ include('./views/layouts/header.php');
 // isset : Kiểm tra xem biến đấy có tồn tại ko
 // empty : Kiểm tra xem biến có null hoặc trống dữ liệu ''
 
-if(isset($_GET['url'])){
+if(isset($_GET['url']) && isset($_SESSION["user"])){
     switch ($_GET['url']) {
         
         // Trang danh sách danh mục
@@ -318,10 +318,12 @@ if(isset($_GET['url'])){
             # code..
             break;
     }
-}else{
+}else if(isset($_SESSION["user"])){
     // Trang chính
     $chart = cateChart();
     include('./views/main.php');
+}else{
+    header("location:".BASE_CLIENT."?dang-nhap");
 }
 
 include('./views/layouts/footer.php');

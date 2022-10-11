@@ -1,7 +1,7 @@
 <div class="container mt-4 warper" style="height: 550px ;">
     <div class="d-flex justify-content-between align-items-center">
          <h3>Quản lý sản phẩm</h3>
-         <a href="?url=product-form-add" class="btn btn-success">
+         <a href="?url=product-form-add" class="bg-main">
              Thêm sản phẩm
          </a>
     </div>

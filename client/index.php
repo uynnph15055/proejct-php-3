@@ -54,9 +54,9 @@ if(isset($_GET['url'])){
                             if(password_verify($_POST["password"] , getAllUser()[$i]["kh_password"])){
                                 $_SESSION["user"] = getAllUser()[$i];
                                if (getAllUser()[$i]["role"] == 1) {
-                                header("location:".BASE_CLIENT."");
+                                  header("location:".BASE_CLIENT."");
                                }else{
-                                header("location:".BASE_ADMIN."trang-chinh");
+                                  header("location: ../../duy-anh/admin/index.php");
                                }
                             }
                         }else{

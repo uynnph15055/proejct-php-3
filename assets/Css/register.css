@@ -1,8 +1,16 @@
 .container{
     height: 100vh;
-    background-color: #100720;
+    background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2021/06/Hinh-anh-may-tinh-gear-xin.jpg');
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -13,7 +21,7 @@
 }
 
 .title_login{
-   color: #7895B2 ;
+   color: #FF577F ;
 }
 
 .title_register{
@@ -48,7 +56,7 @@
 }
 
 .contact__btn {
-    background-color: #100720;
+    background-color: #FF577F;
     color: #fff;
     padding: 10px;
     border: none;
