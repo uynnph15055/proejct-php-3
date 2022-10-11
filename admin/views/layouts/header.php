@@ -45,10 +45,10 @@
                     <div class="dropdown">
                         <?php if(isset($_SESSION["user"])){ ?>
                         <img class="avatar  rounded-circle" data-bs-toggle="dropdown" aria-expanded="false"
-                            src="./../<?=$_SESSION["user"]["kh_avatar"]?>"
+                            src="./../upload/<?=$_SESSION["user"]["kh_avatar"]?>"
                             alt="">
                         <ul class="dropdown-menu tab-user">
-                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                            <li><a class="dropdown-item" href="../client/index.php?logout">Đăng xuất</a></li>
                         </ul>
                         <?php }else{ ?>
                             <a class="text-white" href="">Đăng nhập</a>
