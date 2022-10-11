@@ -102,7 +102,7 @@
                             <h3>SALE</h3>
                         </div>
                         <div class="product-item_phan">
-                            <p> <?=ceil(($item["sp_price"] - $item["sp_sale"]) * 100/$item["sp_price"])?>%</p>
+                            <p> <?=ceil(($item["sp_price"] - trim($item["sp_sale"])) * 100/$item["sp_price"])?>%</p>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                         <?=number_format($item['sp_price'],0,",",".")?>đ
                     </div>
                     <div class="product-price_sale">
-                        <?=number_format($item['sp_sale'],0,",",".")?>đ
+                        <?=number_format(trim($item['sp_sale']),0,",",".")?>đ
                     </div>
                 </div>
             </div>

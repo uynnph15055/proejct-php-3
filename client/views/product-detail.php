@@ -40,7 +40,7 @@
                 <div class="header-product-info_right">
                     <h3 class="product-name"><?=$product[0]["sp_name"]?></h3>
                     <div class="product-sale">
-                        <?=ceil(($product[0]["sp_price"] - $product[0]["sp_sale"]) * 100/$product[0]["sp_price"])?>%
+                        <?=ceil(($product[0]["sp_price"] - trim($product[0]["sp_sale"])) * 100/$product[0]["sp_price"])?>%
                     </div>
                 </div>
                 <div class="product-item_price-wraper">
@@ -48,7 +48,7 @@
                         <?=number_format($product[0]['sp_price'],0,",",".")?>đ
                     </div>
                     <div class="product-price_sale color-text">
-                        <?=number_format($product[0]['sp_sale'],0,",",".")?>đ
+                        <?=number_format(trim($product[0]['sp_sale']),0,",",".")?>đ
                     </div>
                 </div>
                 <div class="product-atribute_box">
@@ -258,7 +258,7 @@
                 <a href="index.php?url=san-pham-chi-tiet&id=<?= $item["sp_id"] ?>"> <img class="w-100"
                         src="./../upload/<?=$item["sp_image"]?>" alt=""></a>
                 <div class="product-item_percent">
-                    <?=ceil(($item["sp_price"] - $item["sp_sale"]) * 100/$item["sp_price"])?>%</div>
+                    <?=ceil(($item["sp_price"] - trim($item["sp_sale"])) * 100/$item["sp_price"])?>%</div>
                 <a href="index.php?url=san-pham-chi-tiet&id=<?= $item["sp_id"] ?>" class="product-item_icon">
                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                 </a>
@@ -271,7 +271,7 @@
                     <?=number_format($item['sp_price'],0,",",".")?>đ
                 </div>
                 <div class="product-price_sale">
-                    <?=number_format($item['sp_sale'],0,",",".")?>đ
+                    <?=number_format(trim($item['sp_sale']),0,",",".")?>đ
                 </div>
             </div>
         </div>

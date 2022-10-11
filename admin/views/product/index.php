@@ -27,7 +27,7 @@
                  <td><?=$item['sp_name']?></td>
                  <td><img width="100px" src="../upload/<?=$item['sp_image']?>"  alt=""></td>
                  <td><?=number_format($item['sp_price'],0,",",".")?>đ</td>
-                 <td><?=number_format($item['sp_sale'],0,",",".")?>đ</td>
+                 <td><?=number_format(trim($item['sp_sale']),0,",",".")?>đ</td>
                  <td><?=$item['sp_quantity']?></td>
                  <td>
                     <a  href="index.php?url=product-cmtt&id=<?=$item['sp_id']?>"  class="btn btn-dark"><i class="fa-solid fa-eye"></i></a>
