@@ -247,6 +247,11 @@
             </div>
         </div>
     </div>
+    <style>
+        .product-item{
+            height: 420px;
+        }
+    </style>
     <h3 class="commom-title product-related_title text-center">
         SẢN PHẨM LIÊN QUAN
     </h3>
@@ -263,9 +268,6 @@
                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                 </a>
             </div>
-            <a style="color: black" href="index.php?url=san-pham-chi-tiet&id=<?= $item["sp_id"] ?>">
-                <p class="product-item_name"><?=$item["sp_name"]?></p>
-            </a>
             <div class="product-item_price-wraper">
                 <div class="product-price-main">
                     <?=number_format($item['sp_price'],0,",",".")?>đ
