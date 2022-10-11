@@ -56,7 +56,7 @@ if(isset($_GET['url'])){
                                if (getAllUser()[$i]["role"] == 1) {
                                   header("location:".BASE_CLIENT."");
                                }else{
-                                  header("location: ../../duy-anh/admin/index.php");
+                                  header("location: ../admin/index.php");
                                }
                             }
                         }else{
