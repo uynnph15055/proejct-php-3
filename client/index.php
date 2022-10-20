@@ -125,6 +125,7 @@ if(isset($_GET['url'])){
                 $productRelate= getProductWhereCate($product[0]["dm_id"]);
                 $comments = getCommentProduct($_GET['id']);
             }
+
             include('./views/product-detail.php');
             break;
 

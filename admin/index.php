@@ -13,8 +13,6 @@ include('./../helper/route-menu-admin.php');
 
 // -------------------------------------------
 include('./views/layouts/header.php');
-// isset : Kiểm tra xem biến đấy có tồn tại ko
-// empty : Kiểm tra xem biến có null hoặc trống dữ liệu ''
 
 if(isset($_GET['url']) && isset($_SESSION["user"])){
     switch ($_GET['url']) {

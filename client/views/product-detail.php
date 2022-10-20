@@ -228,7 +228,7 @@
                                 </p>
                                 <?php if(isset($_SESSION["user"])){
                                     if($_SESSION["user"]["kh_id"] ==  $key["kh_id"]){ ?>
-                                      <a  onclick="return confirm('Bạn có muốn xoá danh mục này ?')"  href="index.php?url=binh-luan-delete&id=<?= $key['cmtt_id']?>"   class="cmtt__delete" href=""><i class="fa-solid fa-xmark"></i></a>
+                                      <a  onclick="return confirm('Bạn có muốn xoá danh mục này ?')"  href="index.php?url=binh-luan-delete&id=<?= $key["cntt_id"]?>"   class="cmtt__delete"><i class="fa-solid fa-xmark"></i></a>
                                       <?php   } ?>
                                 <?php   } ?>
                             </div>

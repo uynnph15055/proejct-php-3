@@ -95,7 +95,7 @@ function getCommentProduct($id){
 
 function deleteCmtt($id){
     $conn = connect();
-    $sql = "DELETE FROM comment WHERE comment.cmtt_id = ".(int)$id;
+    $sql = "DELETE FROM comment WHERE comment.cntt_id = ".(int)$id;
     $conn->exec($sql);
 }
 
