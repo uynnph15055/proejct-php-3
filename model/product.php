@@ -92,7 +92,6 @@ function getCommentProduct($id){
     return $result;
 }
 
-
 function deleteCmtt($id){
     $conn = connect();
     $sql = "DELETE FROM comment WHERE comment.cntt_id = ".(int)$id;
